@@ -2,7 +2,14 @@
 pipeline {
     agent { label 'aditya' }
 
+        
     stages {
+        stage('Start') {
+            steps {
+                echo "Start the CI/CD Pipeline"
+            }
+        }
+        
         stage('Clone') {
             steps {
                 script{
